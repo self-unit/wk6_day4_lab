@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit);
 
-
-
+  const deleteForm = document.querySelector('#delete-all-form');
+  deleteForm.addEventListener('submit', handleFormDelete);
 
 })
 
@@ -33,4 +33,8 @@ const handleFormSubmit = function(event) {
   readingList.appendChild(newDivItem);
 
   event.target.reset();
+}
+
+const handleFormDelete = function(event) {
+  readingList.removeChild(newDivItem);
 }
