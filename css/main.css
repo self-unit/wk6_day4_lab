@@ -1,3 +1,48 @@
 body {
   font-family: Palatino;
 }
+
+#new-item-form {
+  position: relative;
+  border:0px none;
+  padding: 8px 12px;
+  background-color: white;
+  cursor:pointer;
+  font-family: 'Nova Mono', monospace;
+}
+
+
+h1 {
+  position: relative;
+  border:0px none;
+  padding: 8px 12px;
+  font-family: 'Nova Mono', monospace;
+}
+
+#reading-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-direction: row;
+  padding: 1em;
+  overflow: scroll;
+}
+
+#reading-list div {
+  text-align: center;
+  padding: .5em;
+  border:1px none;
+  border-radius: 5%;
+  background-color: #84BCDA;
+  font-family: 'Nova Mono', monospace;
+  margin-top: 1em;
+}
+
+.p1 {
+  font-size: 1.5em;
+}
+
+.p2, .p3 {
+  font-size: 1em;
+}
